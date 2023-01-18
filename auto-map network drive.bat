@@ -18,9 +18,9 @@ exit /b
 ECHO Please enter your staff login:
 set /p username=UID (without U): 
 :: set drive variable because net command really doesn't like whitespace
-set drive="\\anufiles.anu.edu.au\anu\Service Divisions\DSAAS"
+set drive="[redacted]"
 :: login with supplied username, get password
-net use X: %drive%  /user:UDS\u%username% * /PERSISTENT:NO && ( 
+net use X: %drive%  /user:[redacted]\u%username% * /PERSISTENT:NO && ( 
 :: handle success
 CLS
 ECHO.
